@@ -1,2 +1,20 @@
 ---
 # handlers file for devops_demo
+
+    - name: "Stop service"
+
+      service:
+
+        name: nginx
+
+        state: stopped
+
+
+
+    - name: "config change"
+
+      service:
+
+        name: nginx
+
+        state: reloaded
